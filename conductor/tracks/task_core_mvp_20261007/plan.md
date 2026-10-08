@@ -15,7 +15,7 @@
   - [x] Verify 100% of schema test fixtures pass
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) cfd04e6
 
-## Phase 2: Python Frontmatter Extractor & CLI Validator
+## Phase 2: Python Frontmatter Extractor & CLI Validator [checkpoint: 2c551d8]
 - [x] Task: Write Frontmatter & CLI Tests (TDD Red) 0894862
   - [x] Write unit tests in `tests/test_validator.py` for extracting YAML frontmatter and validating against schema
   - [x] Write CLI tests in `tests/test_cli.py` testing `--quiet`, `--json`, exit codes, single files, and directories
@@ -26,7 +26,7 @@
 - [x] Task: Verify Test Coverage & Quality Gates 2c551d8
   - [x] Run `pytest --cov=todolist` and confirm coverage exceeds 80%
   - [x] Verify compliance with `conductor/code_styleguides/python.md`
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) 2c551d8
 
 ## Phase 3: Newport-Aligned Obsidian Templates & CSS Snippets
 - [ ] Task: Author Tactical Task Template
