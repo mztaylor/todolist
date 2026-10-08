@@ -1,11 +1,11 @@
 # Implementation Plan: Task Core MVP (Schemas, Validator CLI, and Newport-Aligned Obsidian Templates)
 
 ## Phase 1: Canonical Task Schema & Test Fixtures
-- [ ] Task: Write Schema Validation Tests & Test Fixtures (TDD Red)
-  - [ ] Set up Python environment dependencies (`jsonschema`, `pyyaml`, `pytest`, `pytest-cov`)
-  - [ ] Create test fixtures for valid tasks (standard, Newport deep/shallow, waiting_on, time estimates)
-  - [ ] Create test fixtures for invalid tasks (malformed IDs, invalid enums, non-multipleOf 15 estimates)
-  - [ ] Write pytest suite in `tests/test_schema.py` asserting schema validation behavior
+- [x] Task: Write Schema Validation Tests & Test Fixtures (TDD Red) de056cc
+  - [x] Set up Python environment dependencies (`jsonschema`, `pyyaml`, `pytest`, `pytest-cov`)
+  - [x] Create test fixtures for valid tasks (standard, Newport deep/shallow, waiting_on, time estimates)
+  - [x] Create test fixtures for invalid tasks (malformed IDs, invalid enums, non-multipleOf 15 estimates)
+  - [x] Write pytest suite in `tests/test_schema.py` asserting schema validation behavior
 - [ ] Task: Implement Canonical JSON Schema (TDD Green)
   - [ ] Create `schemas/task.schema.json` using JSON Schema Draft 2020-12
   - [ ] Define required fields (`id`, `title`, `status`, `priority`, `created_at`, `tags`)
