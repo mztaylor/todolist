@@ -1,6 +1,6 @@
 # Implementation Plan: Task Core MVP (Schemas, Validator CLI, and Newport-Aligned Obsidian Templates)
 
-## Phase 1: Canonical Task Schema & Test Fixtures
+## Phase 1: Canonical Task Schema & Test Fixtures [checkpoint: cfd04e6]
 - [x] Task: Write Schema Validation Tests & Test Fixtures (TDD Red) de056cc
   - [x] Set up Python environment dependencies (`jsonschema`, `pyyaml`, `pytest`, `pytest-cov`)
   - [x] Create test fixtures for valid tasks (standard, Newport deep/shallow, waiting_on, time estimates)
@@ -13,7 +13,7 @@
   - [x] Ensure strict constraints (`additionalProperties: false`, regex patterns, integer multiples)
 - [x] Task: Refactor and Verify Schema Tests cfd04e6
   - [x] Verify 100% of schema test fixtures pass
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) cfd04e6
 
 ## Phase 2: Python Frontmatter Extractor & CLI Validator
 - [ ] Task: Write Frontmatter & CLI Tests (TDD Red)
