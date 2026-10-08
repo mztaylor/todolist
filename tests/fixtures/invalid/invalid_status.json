@@ -1,0 +1,8 @@
+{
+  "id": "TASK-102",
+  "title": "Invalid Status Task",
+  "status": "some-random-status",
+  "priority": "p2",
+  "created_at": "2026-10-07",
+  "tags": []
+}

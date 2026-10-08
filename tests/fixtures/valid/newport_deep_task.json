@@ -1,0 +1,12 @@
+{
+  "id": "WORK-204",
+  "title": "Architect Core Schema Validation Engine",
+  "status": "in-progress",
+  "priority": "p1",
+  "depth": "deep",
+  "scale": "weekly",
+  "time_estimate_minutes": 90,
+  "created_at": "2026-10-07",
+  "due": "2026-10-10",
+  "tags": ["core", "deep-work"]
+}

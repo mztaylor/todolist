@@ -1,0 +1,12 @@
+{
+  "id": "SEC-550",
+  "title": "Awaiting Security Review Sign-off",
+  "status": "waiting",
+  "priority": "p2",
+  "depth": "shallow",
+  "scale": "daily",
+  "waiting_on": "AppSec team ticket SEC-9912",
+  "time_estimate_minutes": 15,
+  "created_at": "2026-10-07",
+  "tags": ["security", "blocked"]
+}

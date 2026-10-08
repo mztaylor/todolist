@@ -1,0 +1,9 @@
+{
+  "id": "TASK-103",
+  "title": "Invalid Time Estimate",
+  "status": "ready",
+  "priority": "p2",
+  "time_estimate_minutes": 25,
+  "created_at": "2026-10-07",
+  "tags": []
+}
