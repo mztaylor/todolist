@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/erintaylor/todolist/main/schemas/task.schema.json",
+  "title": "Task",
+  "description": "Canonical contract specification for task items in todolist core.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "priority",
+    "created_at",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]+-[0-9]+$",
+      "description": "Unique deterministic task identifier (e.g., TASK-101, WORK-204)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Concise human-readable title of the task."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "inbox",
+        "backlog",
+        "ready",
+        "in-progress",
+        "waiting",
+        "review",
+        "done"
+      ],
+      "description": "Current lifecycle status in the Newport-aligned task pipeline."
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "description": "Urgency and importance priority tier."
+    },
+    "depth": {
+      "type": "string",
+      "enum": [
+        "deep",
+        "shallow"
+      ],
+      "description": "Cognitive depth classification according to Cal Newport's Deep Work methodology."
+    },
+    "scale": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekly",
+        "strategic"
+      ],
+      "default": "daily",
+      "description": "Multi-scale planning horizon."
+    },
+    "waiting_on": {
+      "type": "string",
+      "description": "Description or reference of what/who is blocking this task when status is 'waiting'."
+    },
+    "time_estimate_minutes": {
+      "type": "integer",
+      "minimum": 15,
+      "multipleOf": 15,
+      "description": "Estimated duration in minutes, constrained to 15-minute time-blocking increments."
+    },
+    "created_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Creation date in ISO 8601 YYYY-MM-DD format."
+    },
+    "due": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Optional deadline in ISO 8601 YYYY-MM-DD format."
+    },
+    "completed_at": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Optional completion date in ISO 8601 YYYY-MM-DD format."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of categorical labels and contextual tags."
+    }
+  },
+  "additionalProperties": false
+}
