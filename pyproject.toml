@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "todolist"
+version = "0.1.0"
+description = "Contract-first task schema validator and CLI engine"
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.20.0",
+    "pyyaml>=6.0.1",
+    "python-frontmatter>=1.1.0",
+]
+
+[project.scripts]
+todolist = "todolist.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["todolist*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
