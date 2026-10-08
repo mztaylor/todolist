@@ -19,10 +19,10 @@
 - [x] Task: Write Frontmatter & CLI Tests (TDD Red) 0894862
   - [x] Write unit tests in `tests/test_validator.py` for extracting YAML frontmatter and validating against schema
   - [x] Write CLI tests in `tests/test_cli.py` testing `--quiet`, `--json`, exit codes, single files, and directories
-- [ ] Task: Implement `todolist` Core Package and CLI (TDD Green)
-  - [ ] Implement `todolist/__init__.py` and `todolist/validator.py` using `python-frontmatter` / `pyyaml` and `jsonschema`
-  - [ ] Implement `todolist/cli.py` with argument parsing and actionable error formatting
-  - [ ] Configure `pyproject.toml` or `requirements.txt` for clean installation
+- [x] Task: Implement `todolist` Core Package and CLI (TDD Green) 6771e9a
+  - [x] Implement `todolist/__init__.py` and `todolist/validator.py` using `python-frontmatter` / `pyyaml` and `jsonschema`
+  - [x] Implement `todolist/cli.py` with argument parsing and actionable error formatting
+  - [x] Configure `pyproject.toml` or `requirements.txt` for clean installation
 - [ ] Task: Verify Test Coverage & Quality Gates
   - [ ] Run `pytest --cov=todolist` and confirm coverage exceeds 80%
   - [ ] Verify compliance with `conductor/code_styleguides/python.md`
