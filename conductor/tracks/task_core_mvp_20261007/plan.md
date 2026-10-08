@@ -6,11 +6,11 @@
   - [x] Create test fixtures for valid tasks (standard, Newport deep/shallow, waiting_on, time estimates)
   - [x] Create test fixtures for invalid tasks (malformed IDs, invalid enums, non-multipleOf 15 estimates)
   - [x] Write pytest suite in `tests/test_schema.py` asserting schema validation behavior
-- [ ] Task: Implement Canonical JSON Schema (TDD Green)
-  - [ ] Create `schemas/task.schema.json` using JSON Schema Draft 2020-12
-  - [ ] Define required fields (`id`, `title`, `status`, `priority`, `created_at`, `tags`)
-  - [ ] Define Newport fields (`depth`, `scale`, `waiting_on`, `time_estimate_minutes`)
-  - [ ] Ensure strict constraints (`additionalProperties: false`, regex patterns, integer multiples)
+- [x] Task: Implement Canonical JSON Schema (TDD Green) 0bccd4f
+  - [x] Create `schemas/task.schema.json` using JSON Schema Draft 2020-12
+  - [x] Define required fields (`id`, `title`, `status`, `priority`, `created_at`, `tags`)
+  - [x] Define Newport fields (`depth`, `scale`, `waiting_on`, `time_estimate_minutes`)
+  - [x] Ensure strict constraints (`additionalProperties: false`, regex patterns, integer multiples)
 - [ ] Task: Refactor and Verify Schema Tests
   - [ ] Verify 100% of schema test fixtures pass
 - [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
