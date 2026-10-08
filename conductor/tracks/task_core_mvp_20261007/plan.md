@@ -29,8 +29,8 @@
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) 2c551d8
 
 ## Phase 3: Newport-Aligned Obsidian Templates & CSS Snippets
-- [ ] Task: Author Tactical Task Template
-  - [ ] Create `templates/task.md` with schema-compliant YAML frontmatter and Dataview checklist sections
+- [x] Task: Author Tactical Task Template ee4ad42
+  - [x] Create `templates/task.md` with schema-compliant YAML frontmatter and Dataview checklist sections
 - [ ] Task: Author Multi-Scale Planning Templates
   - [ ] Create `templates/weekly-plan.md` for weekly reviews, strategic objectives, and active task pooling
   - [ ] Create `templates/daily-timeblock.md` with dual-column layout (Task Queue / Timeblock Grid)
