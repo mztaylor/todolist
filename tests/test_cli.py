@@ -92,3 +92,15 @@ def test_cli_nonexistent_path(capsys):
     exit_code = main(["validate", "/path/does/not/exist/ever.md"])
     captured = capsys.readouterr()
     assert exit_code == 2
+
+def test_cli_no_subcommand(capsys):
+    exit_code = main([])
+    assert exit_code == 2
+
+def test_cli_empty_directory(capsys):
+    with tempfile.TemporaryDirectory() as tmpdir:
+        exit_code = main(["validate", tmpdir])
+        captured = capsys.readouterr()
+        assert exit_code == 0
+        assert "No markdown" in captured.out
+
