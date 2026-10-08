@@ -78,3 +78,31 @@ def test_time_estimate_multiples_of_15(task_schema):
     assert validator.is_valid({**base_task, "time_estimate_minutes": 60})
     assert not validator.is_valid({**base_task, "time_estimate_minutes": 10})
     assert not validator.is_valid({**base_task, "time_estimate_minutes": -15})
+
+def test_scale_enum(task_schema):
+    base_task = {
+        "id": "TASK-100",
+        "title": "Scale test",
+        "status": "ready",
+        "priority": "p1",
+        "created_at": "2026-10-07",
+        "tags": []
+    }
+    validator = Draft202012Validator(task_schema)
+    for scale in ["daily", "weekly", "strategic"]:
+        assert validator.is_valid({**base_task, "scale": scale})
+    assert not validator.is_valid({**base_task, "scale": "monthly"})
+
+def test_waiting_on_string(task_schema):
+    base_task = {
+        "id": "TASK-100",
+        "title": "Waiting test",
+        "status": "waiting",
+        "priority": "p1",
+        "waiting_on": "Review from Alice",
+        "created_at": "2026-10-07",
+        "tags": []
+    }
+    validator = Draft202012Validator(task_schema)
+    assert validator.is_valid(base_task)
+
