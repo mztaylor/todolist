@@ -1,0 +1,8 @@
+{
+  "track_id": "task_core_mvp_20261007",
+  "type": "mvp",
+  "status": "new",
+  "created_at": "2026-10-07T22:23:00-04:00",
+  "updated_at": "2026-10-07T22:23:00-04:00",
+  "description": "Core task schema (JSON Schema Draft 2020-12), Obsidian note templates, and Python CLI validator with git pre-commit hook"
+}
