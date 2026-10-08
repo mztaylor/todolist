@@ -16,9 +16,9 @@
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) cfd04e6
 
 ## Phase 2: Python Frontmatter Extractor & CLI Validator
-- [ ] Task: Write Frontmatter & CLI Tests (TDD Red)
-  - [ ] Write unit tests in `tests/test_validator.py` for extracting YAML frontmatter and validating against schema
-  - [ ] Write CLI tests in `tests/test_cli.py` testing `--quiet`, `--json`, exit codes, single files, and directories
+- [x] Task: Write Frontmatter & CLI Tests (TDD Red) 0894862
+  - [x] Write unit tests in `tests/test_validator.py` for extracting YAML frontmatter and validating against schema
+  - [x] Write CLI tests in `tests/test_cli.py` testing `--quiet`, `--json`, exit codes, single files, and directories
 - [ ] Task: Implement `todolist` Core Package and CLI (TDD Green)
   - [ ] Implement `todolist/__init__.py` and `todolist/validator.py` using `python-frontmatter` / `pyyaml` and `jsonschema`
   - [ ] Implement `todolist/cli.py` with argument parsing and actionable error formatting
