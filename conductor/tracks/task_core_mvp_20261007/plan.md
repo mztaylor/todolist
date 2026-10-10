@@ -40,11 +40,11 @@
   - [x] Run `python -m todolist validate templates/` to verify zero schema violations in provided templates
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) a9a6cc7
 
-## Phase 4: Standalone Pre-Commit Hook & End-to-End Verification
+## Phase 4: Standalone Pre-Commit Hook & End-to-End Verification [checkpoint: f961d03]
 - [x] Task: Implement Git Pre-Commit Hook 677c616
   - [x] Create `scripts/pre-commit-hook.sh` inspecting staged `.md` files
   - [x] Add execution permissions and fail-fast validation logic
 - [x] Task: End-to-End Verification & Documentation f961d03
   - [x] Test pre-commit script against staged valid and invalid markdown files
   - [x] Verify all test suites pass and documentation reflects CLI and template usage
-- [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
+- [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) f961d03
