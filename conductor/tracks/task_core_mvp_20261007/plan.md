@@ -41,9 +41,9 @@
 - [x] Task: Phase Verification & Checkpoint (Refer to workflow.md) a9a6cc7
 
 ## Phase 4: Standalone Pre-Commit Hook & End-to-End Verification
-- [ ] Task: Implement Git Pre-Commit Hook
-  - [ ] Create `scripts/pre-commit-hook.sh` inspecting staged `.md` files
-  - [ ] Add execution permissions and fail-fast validation logic
+- [x] Task: Implement Git Pre-Commit Hook 677c616
+  - [x] Create `scripts/pre-commit-hook.sh` inspecting staged `.md` files
+  - [x] Add execution permissions and fail-fast validation logic
 - [ ] Task: End-to-End Verification & Documentation
   - [ ] Test pre-commit script against staged valid and invalid markdown files
   - [ ] Verify all test suites pass and documentation reflects CLI and template usage
