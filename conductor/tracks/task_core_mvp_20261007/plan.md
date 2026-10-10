@@ -44,7 +44,7 @@
 - [x] Task: Implement Git Pre-Commit Hook 677c616
   - [x] Create `scripts/pre-commit-hook.sh` inspecting staged `.md` files
   - [x] Add execution permissions and fail-fast validation logic
-- [ ] Task: End-to-End Verification & Documentation
-  - [ ] Test pre-commit script against staged valid and invalid markdown files
-  - [ ] Verify all test suites pass and documentation reflects CLI and template usage
+- [x] Task: End-to-End Verification & Documentation f961d03
+  - [x] Test pre-commit script against staged valid and invalid markdown files
+  - [x] Verify all test suites pass and documentation reflects CLI and template usage
 - [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
