@@ -36,8 +36,8 @@
   - [x] Create `templates/daily-timeblock.md` with dual-column layout (Task Queue / Timeblock Grid)
 - [x] Task: Implement Obsidian Styling Snippets 6f437f9
   - [x] Create `obsidian/snippets/task-cards.css` styling status pills, priority markers, and deep/shallow badges
-- [ ] Task: Validate Templates via CLI Validator
-  - [ ] Run `python -m todolist validate templates/` to verify zero schema violations in provided templates
+- [x] Task: Validate Templates via CLI Validator 65eb363
+  - [x] Run `python -m todolist validate templates/` to verify zero schema violations in provided templates
 - [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
 
 ## Phase 4: Standalone Pre-Commit Hook & End-to-End Verification
