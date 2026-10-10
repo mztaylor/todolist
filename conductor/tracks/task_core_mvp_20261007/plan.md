@@ -31,9 +31,9 @@
 ## Phase 3: Newport-Aligned Obsidian Templates & CSS Snippets
 - [x] Task: Author Tactical Task Template ee4ad42
   - [x] Create `templates/task.md` with schema-compliant YAML frontmatter and Dataview checklist sections
-- [ ] Task: Author Multi-Scale Planning Templates
-  - [ ] Create `templates/weekly-plan.md` for weekly reviews, strategic objectives, and active task pooling
-  - [ ] Create `templates/daily-timeblock.md` with dual-column layout (Task Queue / Timeblock Grid)
+- [x] Task: Author Multi-Scale Planning Templates 8fb9d2e
+  - [x] Create `templates/weekly-plan.md` for weekly reviews, strategic objectives, and active task pooling
+  - [x] Create `templates/daily-timeblock.md` with dual-column layout (Task Queue / Timeblock Grid)
 - [ ] Task: Implement Obsidian Styling Snippets
   - [ ] Create `obsidian/snippets/task-cards.css` styling status pills, priority markers, and deep/shallow badges
 - [ ] Task: Validate Templates via CLI Validator
