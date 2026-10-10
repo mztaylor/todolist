@@ -104,3 +104,16 @@ def test_cli_empty_directory(capsys):
         assert exit_code == 0
         assert "No markdown" in captured.out
 
+
+def test_cli_module_execution():
+    import subprocess
+    import sys
+    result = subprocess.run(
+        [sys.executable, "-m", "todolist", "--help"],
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 0
+    assert "todolist" in result.stdout.lower() or "usage:" in result.stdout.lower()
+
+
