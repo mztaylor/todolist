@@ -2,9 +2,14 @@
 # Standalone Git Pre-Commit Hook: Validates staged markdown task notes against schemas/task.schema.json.
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
 # 1. Resolve Python executable
 if [ -n "${VIRTUAL_ENV:-}" ] && [ -x "$VIRTUAL_ENV/bin/python" ]; then
   PYTHON="$VIRTUAL_ENV/bin/python"
+elif [ -x "$REPO_ROOT/.venv/bin/python" ]; then
+  PYTHON="$REPO_ROOT/.venv/bin/python"
 elif [ -x ".venv/bin/python" ]; then
   PYTHON=".venv/bin/python"
 elif command -v python3 >/dev/null 2>&1; then
@@ -15,6 +20,8 @@ else
   echo "[todolist-hook] ERROR: Python runtime not found." >&2
   exit 1
 fi
+
+export PYTHONPATH="${REPO_ROOT}:${PYTHONPATH:-}"
 
 # 2. Collect candidate files to validate
 FILES=()
