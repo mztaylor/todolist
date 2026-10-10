@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Obsidian Snippet: Task Cards, Status Pills, and Newport Badges
+   Compliant with Google HTML/CSS Style Guide
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Status Pills (Inbox, Backlog, Ready, In-Progress, Waiting, Review, Done)
+   -------------------------------------------------------------------------- */
+
+.status-pill,
+[data-task-status],
+.kanban-plugin__item-tag[href*='status-'] {
+  border-radius: 9999px;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 0.25em 0.6em;
+  text-transform: uppercase;
+}
+
+/* Status: Inbox */
+.status-pill[data-status='inbox'],
+[data-task-status='inbox'],
+.kanban-plugin__item-tag[href*='inbox'] {
+  background-color: #64748b;
+  color: #fff;
+}
+
+/* Status: Backlog */
+.status-pill[data-status='backlog'],
+[data-task-status='backlog'],
+.kanban-plugin__item-tag[href*='backlog'] {
+  background-color: #94a3b8;
+  color: #0f172a;
+}
+
+/* Status: Ready */
+.status-pill[data-status='ready'],
+[data-task-status='ready'],
+.kanban-plugin__item-tag[href*='ready'] {
+  background-color: #0284c7;
+  color: #fff;
+}
+
+/* Status: In Progress */
+.status-pill[data-status='in-progress'],
+[data-task-status='in-progress'],
+.kanban-plugin__item-tag[href*='in-progress'] {
+  background-color: #eab308;
+  color: #422006;
+}
+
+/* Status: Waiting */
+.status-pill[data-status='waiting'],
+[data-task-status='waiting'],
+.kanban-plugin__item-tag[href*='waiting'] {
+  background-color: #f97316;
+  color: #fff;
+}
+
+/* Status: Review */
+.status-pill[data-status='review'],
+[data-task-status='review'],
+.kanban-plugin__item-tag[href*='review'] {
+  background-color: #8b5cf6;
+  color: #fff;
+}
+
+/* Status: Done */
+.status-pill[data-status='done'],
+[data-task-status='done'],
+.kanban-plugin__item-tag[href*='done'] {
+  background-color: #22c55e;
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   Priority Badges (P1, P2, P3)
+   -------------------------------------------------------------------------- */
+
+.priority-badge,
+[data-task-priority],
+.kanban-plugin__item-tag[href*='priority-'] {
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.2em 0.5em;
+  text-transform: uppercase;
+}
+
+/* Priority: P1 (High / Critical) */
+.priority-badge[data-priority='p1'],
+[data-task-priority='p1'],
+.kanban-plugin__item-tag[href*='p1'] {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+/* Priority: P2 (Medium) */
+.priority-badge[data-priority='p2'],
+[data-task-priority='p2'],
+.kanban-plugin__item-tag[href*='p2'] {
+  background-color: #f59e0b;
+  color: #1f2937;
+}
+
+/* Priority: P3 (Low) */
+.priority-badge[data-priority='p3'],
+[data-task-priority='p3'],
+.kanban-plugin__item-tag[href*='p3'] {
+  background-color: #10b981;
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   Cognitive Depth Badges (Deep Work vs. Shallow Work)
+   -------------------------------------------------------------------------- */
+
+.depth-badge,
+[data-task-depth],
+.kanban-plugin__item-tag[href*='depth-'] {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.25em 0.55em;
+  text-transform: uppercase;
+}
+
+/* Depth: Deep Work */
+.depth-badge[data-depth='deep'],
+[data-task-depth='deep'],
+.kanban-plugin__item-tag[href*='deep'] {
+  background-color: #312e81;
+  border-color: #6366f1;
+  color: #e0e7ff;
+}
+
+/* Depth: Shallow Work */
+.depth-badge[data-depth='shallow'],
+[data-task-depth='shallow'],
+.kanban-plugin__item-tag[href*='shallow'] {
+  background-color: #ecfdf5;
+  border-color: #6ee7b7;
+  color: #065f46;
+}
+
+/* --------------------------------------------------------------------------
+   Daily Time-Block Layout Container
+   -------------------------------------------------------------------------- */
+
+.timeblock-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.timeblock-queue,
+.timeblock-schedule {
+  border: 1px solid var(--background-modifier-border, #e2e8f0);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.timeblock-queue {
+  background-color: var(--background-secondary, #f8fafc);
+}
+
+.timeblock-schedule {
+  background-color: var(--background-primary, #fff);
+}
+
+/* --------------------------------------------------------------------------
+   Kanban Card Enhancement
+   -------------------------------------------------------------------------- */
+
+.kanban-plugin__item {
+  border-left: 3px solid var(--interactive-accent, #6366f1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kanban-plugin__item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
