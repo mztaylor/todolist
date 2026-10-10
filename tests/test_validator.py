@@ -104,3 +104,13 @@ def test_validate_task_file_invalid():
         assert len(result.errors) > 0
     finally:
         path.unlink()
+
+
+def test_all_provided_templates_are_valid():
+    templates_dir = Path(__file__).resolve().parent.parent / "templates"
+    template_files = list(templates_dir.glob("*.md"))
+    assert len(template_files) >= 3
+    for template_file in template_files:
+        result = validate_task_file(template_file)
+        assert result.is_valid, f"Template {template_file.name} failed validation: {result.errors}"
+
