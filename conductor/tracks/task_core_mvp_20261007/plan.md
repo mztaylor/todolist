@@ -34,8 +34,8 @@
 - [x] Task: Author Multi-Scale Planning Templates 8fb9d2e
   - [x] Create `templates/weekly-plan.md` for weekly reviews, strategic objectives, and active task pooling
   - [x] Create `templates/daily-timeblock.md` with dual-column layout (Task Queue / Timeblock Grid)
-- [ ] Task: Implement Obsidian Styling Snippets
-  - [ ] Create `obsidian/snippets/task-cards.css` styling status pills, priority markers, and deep/shallow badges
+- [x] Task: Implement Obsidian Styling Snippets 6f437f9
+  - [x] Create `obsidian/snippets/task-cards.css` styling status pills, priority markers, and deep/shallow badges
 - [ ] Task: Validate Templates via CLI Validator
   - [ ] Run `python -m todolist validate templates/` to verify zero schema violations in provided templates
 - [ ] Task: Phase Verification & Checkpoint (Refer to workflow.md)
